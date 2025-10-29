@@ -1,0 +1,1 @@
+{"version":3,"file":"Admin.interface.d.ts","sourceRoot":"","sources":["../../../src/model/Admin/Admin.interface.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,2BAA2B,CAAC;AAEvD,MAAM,WAAW,MAAO,SAAQ,KAAK;IACnC,IAAI,EAAE,OAAO,CAAC;IACd,WAAW,CAAC,EAAE,CACV,aAAa,GACb,iBAAiB,GACjB,gBAAgB,GAChB,eAAe,CAClB,EAAE,CAAC;CACL"}
