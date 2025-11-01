@@ -5,11 +5,13 @@ export const createExamService = async (data) => {
 };
 // Get all exam questions
 export const getAllExamsService = async () => {
-    return await ExamModel.find();
+    return await ExamModel.find()
+        .populate('userId');
 };
 // Get exam by ID
 export const getExamByIdService = async (id) => {
-    return await ExamModel.findById(id);
+    return await ExamModel.findById(id)
+        .populate('userId');
 };
 // Delete exam
 export const deleteExamService = async (id) => {

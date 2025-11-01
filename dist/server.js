@@ -10,4 +10,8 @@ async function main() {
         console.log(`Example app listening on port ${port}`);
     });
 }
+// PORT = 4000
+// MONGODB_URL=mongodb+srv://CareerBoost:CareerBoost@cluster0.xe3zx.mongodb.net/CareerBoost
+// NODE_ENV=development
+// JWT_SECRET=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp
 //# sourceMappingURL=server.js.map
