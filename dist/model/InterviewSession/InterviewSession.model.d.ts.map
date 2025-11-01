@@ -1,1 +1,1 @@
-{"version":3,"file":"InterviewSession.model.d.ts","sourceRoot":"","sources":["../../../src/model/InterviewSession/InterviewSession.model.ts"],"names":[],"mappings":""}
+{"version":3,"file":"InterviewSession.model.d.ts","sourceRoot":"","sources":["../../../src/model/InterviewSession/InterviewSession.model.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,KAAK,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AAC1D,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,iCAAiC,CAAC;AAgCzE,eAAO,MAAM,qBAAqB;;;;OAGjC,CAAC"}

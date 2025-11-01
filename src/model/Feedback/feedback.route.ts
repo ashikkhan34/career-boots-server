@@ -6,10 +6,10 @@ import { feedbackController } from './feedback.controller.js';
 const router = express.Router()
 
 
-router.post("/", validate(feedbackSchema), feedbackController.createFeedbackController);
+router.post("/create-feedback", validate(feedbackSchema), feedbackController.createFeedbackController);
 router.get("/", feedbackController.getAllFeedbackController);
 router.get("/:id", feedbackController.getFeedbackController);
-router.patch("/:id", validate(feedbackSchema.partial()), feedbackController.updateFeedbackController);
-router.delete("/:id", feedbackController.deleteFeedbackController);
+router.patch("/update/:id", validate(feedbackSchema.partial()), feedbackController.updateFeedbackController);
+router.delete("/delete/:id", feedbackController.deleteFeedbackController);
 
 export const feedbackRouter = router;

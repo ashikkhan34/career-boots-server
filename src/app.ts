@@ -9,6 +9,8 @@ import { questionRouter } from './model/quistion/quistion.routes.js'
 import { interviewSessionRouter } from './model/InterviewSession/InterviewSession.routes.js'
 import { feedbackRouter } from './model/Feedback/feedback.route.js'
 import { sessionRouter } from './model/Session/session.route.js'
+import { courseRouter } from './model/course/course.routes.js'
+import { examRouter } from './model/Exam/exam.route.js'
 
 
 const app = express()
@@ -25,6 +27,9 @@ app.use('/api/question',questionRouter)
 app.use('/api/interviewSession',interviewSessionRouter)
 app.use('/api/feedback',feedbackRouter)
 app.use('/api/session',sessionRouter)
+app.use('/api/course',courseRouter)
+app.use("/api/exam", examRouter);
+
 
 app.get('/',(req,res)=>{
     res.send('your career is run on the way...')

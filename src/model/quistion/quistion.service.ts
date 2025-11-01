@@ -9,7 +9,8 @@ const createQuestionService = async (payload: IQuestion) => {
 };
 
 const getAllQuestionsService = async () => {
-  const questions = await QuestionModel.find().sort({ createdAt: -1 });
+  const questions = await QuestionModel.find()
+  .populate("createdBy")
   return questions;
 };
 

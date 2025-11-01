@@ -10,7 +10,7 @@ const UserSchema = new Schema<IUser>(
     bio: { type: String, default: "" },
     skills: { type: [String], default: [] },
     experience: { type: Number, default: 0 }, // in years
-    resumeUrl: { type: String },
+    image: { type: String },
     isVerified: { type: Boolean, default: false },
   },
   { timestamps: true } // createdAt, updatedAt automatically handled

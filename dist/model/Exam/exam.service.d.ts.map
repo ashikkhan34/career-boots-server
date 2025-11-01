@@ -1,0 +1,1 @@
+{"version":3,"file":"exam.service.d.ts","sourceRoot":"","sources":["../../../src/model/Exam/exam.service.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,qBAAqB,CAAC;AAKjD,eAAO,MAAM,iBAAiB,GAAU,MAAM,KAAK;;;;EAElD,CAAC;AAGF,eAAO,MAAM,kBAAkB;;;;KAE9B,CAAC;AAGF,eAAO,MAAM,kBAAkB,GAAU,IAAI,MAAM;;;;UAElD,CAAC;AAGF,eAAO,MAAM,iBAAiB,GAAU,IAAI,MAAM;;;;UAEjD,CAAC"}

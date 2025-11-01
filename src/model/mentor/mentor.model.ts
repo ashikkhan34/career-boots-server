@@ -12,7 +12,7 @@ const MentorSchema = new Schema<IMentorDocument>(
     bio: { type: String, default: "" },
     skills: { type: [String], default: [] },
     experience: { type: Number, default: 0 },
-    resumeUrl: { type: String },
+    image: { type: String },
     isVerified: { type: Boolean, default: false },
 
     expertise: { type: [String], default: [] },

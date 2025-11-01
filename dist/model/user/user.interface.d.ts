@@ -6,7 +6,7 @@ export interface IUser {
     bio?: string;
     skills: string[];
     experience?: number;
-    resumeUrl?: string;
+    image?: string;
     createdAt: Date;
     updatedAt: Date;
     isVerified: boolean;

@@ -6,10 +6,10 @@ import { questionController } from './quistion.controller.js';
 const router = express.Router()
 
 
-router.post("/", validate(questionSchema), questionController.createQuestionController);
+router.post("/create-question", validate(questionSchema), questionController.createQuestionController);
 router.get("/", questionController.getAllQuestionsController);
 router.get("/:id", questionController.getAQuestionController);
-router.patch("/:id", validate(questionSchema.partial()), questionController.updateQuestionController);
-router.delete("/:id", questionController.deleteQuestionController);
+router.patch("/update/:id", validate(questionSchema.partial()), questionController.updateQuestionController);
+router.delete("/delete/:id", questionController.deleteQuestionController);
 
 export const questionRouter = router;

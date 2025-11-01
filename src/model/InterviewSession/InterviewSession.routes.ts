@@ -5,11 +5,11 @@ import { interviewSessionController } from './InterviewSession.controller.js';
 const router = express.Router()
 
 
-router.post("/", validate(interviewSessionSchema), interviewSessionController.createInterviewSessionController);
+router.post("/create-interview", validate(interviewSessionSchema), interviewSessionController.createInterviewSessionController);
 router.get("/", interviewSessionController.getAllInterviewSessionsController);
 router.get("/:id", interviewSessionController.getAnInterviewSessionController);
-router.patch("/:id", validate(interviewSessionSchema.partial()), interviewSessionController.updateInterviewSessionController);
-router.delete("/:id", interviewSessionController.deleteInterviewSessionController);
+router.patch("/update/:id", validate(interviewSessionSchema.partial()), interviewSessionController.updateInterviewSessionController);
+router.delete("/delete/:id", interviewSessionController.deleteInterviewSessionController);
 
 
 export const interviewSessionRouter = router;

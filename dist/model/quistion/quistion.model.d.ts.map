@@ -1,1 +1,1 @@
-{"version":3,"file":"quistion.model.d.ts","sourceRoot":"","sources":["../../../src/model/quistion/quistion.model.ts"],"names":[],"mappings":""}
+{"version":3,"file":"quistion.model.d.ts","sourceRoot":"","sources":["../../../src/model/quistion/quistion.model.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,KAAK,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AAC1D,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,yBAAyB,CAAC;AAezD,eAAO,MAAM,aAAa;;;;OAAgD,CAAC"}

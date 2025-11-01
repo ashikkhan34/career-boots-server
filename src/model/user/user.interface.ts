@@ -6,7 +6,7 @@
   bio?: string;
   skills: string[];
   experience?: number; // years
-  resumeUrl?: string;
+  image?: string;
   createdAt: Date;
   updatedAt: Date;
   isVerified: boolean;
