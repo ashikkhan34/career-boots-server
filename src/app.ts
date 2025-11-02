@@ -11,6 +11,8 @@ import { feedbackRouter } from './model/Feedback/feedback.route.js'
 import { sessionRouter } from './model/Session/session.route.js'
 import { courseRouter } from './model/course/course.routes.js'
 import { examRouter } from './model/Exam/exam.route.js'
+import bodyParser from "body-parser";
+import router from './model/Config/chatRoutes.js'
 
 
 const app = express()
@@ -18,6 +20,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(globalErrorHandler)
+app.use(bodyParser.json());
 
 app.use('/api/users',userRouter)
 app.use('/api/auth',authRouter)
@@ -29,6 +32,7 @@ app.use('/api/feedback',feedbackRouter)
 app.use('/api/session',sessionRouter)
 app.use('/api/course',courseRouter)
 app.use("/api/exam", examRouter);
+app.use("/api", router);
 
 
 app.get('/',(req,res)=>{
