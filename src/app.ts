@@ -20,6 +20,7 @@ const app = express()
 app.use(cors({
    origin: [
     "https://career-boots-clint.vercel.app",
+    "http://localhost:3000",
     /\.vercel\.app$/ // সব vercel subdomain allow করবে
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
