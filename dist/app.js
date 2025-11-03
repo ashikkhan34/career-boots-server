@@ -14,7 +14,14 @@ import { examRouter } from './model/Exam/exam.route.js';
 import bodyParser from "body-parser";
 import router from './model/Config/chatRoutes.js';
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: [
+        "https://career-boots-clint.vercel.app",
+        /\.vercel\.app$/ // সব vercel subdomain allow করবে
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+}));
 app.use(express.json());
 app.use(globalErrorHandler);
 app.use(bodyParser.json());
