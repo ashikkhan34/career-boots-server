@@ -18,9 +18,12 @@ import router from './model/Config/chatRoutes.js'
 const app = express()
 
 app.use(cors({
-  origin: "https://career-boots-4xnbluq3i-ashik-khans-projects-431c6227.vercel.app",
+   origin: [
+    "https://career-boots-clint.vercel.app",
+    /\.vercel\.app$/ // সব vercel subdomain allow করবে
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true, // যদি cookies পাঠাতে চাও
+  credentials: true, 
 }));
 app.use(express.json())
 app.use(globalErrorHandler)
